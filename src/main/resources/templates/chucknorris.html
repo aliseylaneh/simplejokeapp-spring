@@ -44,18 +44,22 @@
             padding-bottom: 70px;
         }
 
+        .p-1 {
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
 <div class="container-fluid bg-1 text-center">
     <h3 class="margin">Hey Im Chunk Norris</h3>
-    <img src="../static/images/chucknorris.jpg" class="img-responsive img-circle margin" style="display:inline"
+    <img th:src="@{/resources/static/images/ChuckNorris.jpg}" class="img-responsive img-circle margin"
+         style="display:inline"
          width="350"
          height="350">
 </div>
 <div class="container-fluid bg-2 text-center">
     <h3 class="margin">You Wanna Hear a Joke? :)</h3>
-    <p th:text="${joke}">insert joke here!!</p>
+    <p class="p-1" th:text="${joke}">insert joke here!!</p>
 </div>
 <footer class="container-fluid bg-4 text-center">
     <p>© 2019 aliseylaneh@gmail.com</a></p>
