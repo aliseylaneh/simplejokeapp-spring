@@ -19,12 +19,9 @@
             font-size: 16px;
         }
 
-        .margin {
-            margin-bottom: 50px;
-        }
 
         .bg-1 {
-            background-color: #1abc9c; /* Green */
+            background-color: #004d40; /* Green */
             color: #ffffff;
         }
 
@@ -40,30 +37,33 @@
         }
 
         .container-fluid {
+
             padding-top: 70px;
             padding-bottom: 70px;
         }
 
         .p-1 {
-            font-style: italic;
+            font-family: "Segoe Print";
         }
     </style>
 </head>
-<body>
-<div class="container-fluid bg-1 text-center">
-    <h3 class="margin">Hey Im Chunk Norris</h3>
-    <img th:src="@{/resources/static/images/ChuckNorris.jpg}" class="img-responsive img-circle margin"
-         style="display:inline"
-         width="350"
-         height="350">
+<body class="bg-4">
+<div style="height: 100%;width: 100%">
+    <div class="container-fluid bg-1 text-center">
+        <h3 class="margin p-1">Hey Im Chunk Norris</h3>
+        <img src="../static/images/ChuckNorris.jpg" class="img-responsive img-circle margin"
+             style="display:inline"
+             width="350"
+             height="350" th:src="@{images/ChuckNorris.jpg}"/>
+    </div>
+    <div class="container-fluid bg-2 text-center">
+        <h3 class="margin">You Wanna Hear a Joke? :)</h3>
+        <p class="p-1" th:text="${joke}">insert joke here!!</p>
+    </div>
+    <footer class="container-fluid bg-4 text-center">
+        <p>© 2019 aliseylaneh@gmail.com</a></p>
+    </footer>
 </div>
-<div class="container-fluid bg-2 text-center">
-    <h3 class="margin">You Wanna Hear a Joke? :)</h3>
-    <p class="p-1" th:text="${joke}">insert joke here!!</p>
-</div>
-<footer class="container-fluid bg-4 text-center">
-    <p>© 2019 aliseylaneh@gmail.com</a></p>
-</footer>
 
 
 </body>
