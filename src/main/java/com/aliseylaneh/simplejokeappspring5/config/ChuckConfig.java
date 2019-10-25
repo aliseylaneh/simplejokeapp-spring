@@ -1,12 +1,10 @@
 package com.aliseylaneh.simplejokeappspring5.config;
 
 import guru.springframework.norris.chuck.ChuckNorrisQuotes;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
+//@Configuration
 public class ChuckConfig {
-    @Bean
+    //@Bean
     public ChuckNorrisQuotes chuckNorrisQuotes() {
         return new ChuckNorrisQuotes();
     }
